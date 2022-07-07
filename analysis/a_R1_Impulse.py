@@ -5,7 +5,7 @@ from scipy.stats import chi2_contingency
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
-# Calculation the standard deviation from the noise
+# Calculation for the standard deviation from the noise
 noise = pd.read_table('data/raw data/Noise1105.txt', sep='\t')
 std = np.std(noise.Noise)
 
