@@ -1,0 +1,5 @@
+#Rmove the .RD_Store files in the repository
+*.DS_Store
+
+#Remove the build folder in the repository
+build
