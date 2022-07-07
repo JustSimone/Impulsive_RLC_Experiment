@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css" type="text/css">
+    <title>PhysiCalc - Legge dei gas perfetti</title>
+    <style media="screen">
+      body{
+        background-color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="home page.html"><img src="logo.png" style="height:100px;"></a>
+      </header>
+      <nav>
+        <table style="width: 100%;">
+          <tr>
+            <td><button class="dropbtn" onclick="javascript:history.go(-1)"><img src="ind.png" style="width: 100%"></button></td>
+            <td>
+        <div class="dropdown" style="float:right;">
+          <table>
+            <tr>
+              <td> <p class="font1">Menu </p> </td>
+              <td><button class="dropbtn"><img src="menu.png" style="width: 100%"></button></td>
+            </tr>
+          </table>
+          <div class="dropdown-content">
+          <a href="pdd.html">Leggi della dinamica</a>
+          <a href="e.html">Energia cinetica</a>
+          <a href="lgp.html" style="text-decoration: underline; border: 1px solid black;">Legge dei gas perfetti</a>
+          <a href="home page.html"> HOME</a>
+        </div>
+      </div>
+      </td>
+      </tr>
+      </table>
+      </nav>
+      <br>
+      <h1 style="margin-top: 0.1%;">Legge Dei Gas Perfetti</h1>
+      <aside class="">
+        <div class="ul">
+          <a href="#isoterma">Isoterma</a>
+          <a href="#isobara">Isobara</a>
+          <a href="#isocora">Isocora</a>
+          <a href="#c">Calcoli</a>
+        </div>
+      </aside>
+      <div class="paragrafo">
+        <p>Il comportamento di un gas è fortemente influenzato dalle variabili di stato: pressione, volume, temperatura. <br>
+          Ci si può chiedere in quale modo tali grandezze fisiche influenzano lo stato gassoso. A tale domanda hanno risposto vari scienziati dei secoli passati.
+          E' infatti possibile formulare relazioni che legano le variabili di stato. <br>
+          Tali relazioni sono note come leggi dei gas perfetti o leggi dei gas ideali. <br>
+          Tali leggi furono scoperte empiricamente fra il 1660 ed il 1803 e ottenute poi teoricamente mediante la meccanica statistica di Maxwell e quella quantistica di Boltzmann. <br>
+          In tali trattazioni ci si riferisce sempre ad un modello di gas detto gas ideale o gas perfetto che permette di studiare i gas secondo la teoria cinetico-molecolare. <br>
+          Le leggi dei gas perfetti sono quattro: nelle prime tre leggi viene mantenuta costante una delle tre variabili di stato e si osserva come sono in relazione le restanti due variabili.
+          La quarta legge dei gas invece mette in relazione contemporaneamente tutte e tre le variabili di stato in una unica equazione.
+          <br>
+          Le quattro leggi dei gas perfetti sono: <br> </p>
+          <br>
+          <h2 id="isoterma">Trasformazioni a temperatura costante</h2>
+          <p>Nel 1662 Robet Boyle formulò una legge sui gas nota come legge di Boyle o legge dell'isoterma: il volume occupato da un gas, mantenuto a temperatura costante, è inversamente proporzionale alla pressione alla quale il gas è sottoposto.<br>
+            Ciò vuole dire che, mantenendo costante la temperatura (trasformazione isoterma) e raddoppiando, triplicando o quadruplicando la pressione esercitata sul gas, il suo volume diventa rispettivamente un mezzo, un terzo, un quarto.</p>
+            <br>
+            <h2 id="isobara">Trasformazioni a pressione costante</h2>
+            <p>Nel 1787 il francese J.A.C. Charles formulò la legge sui gas nota come legge di Charles o prima legge di Gay-Lussac o legge dell'isobara: <br>
+              a pressione costante, il volume di una data quantità di gas è direttamente proporzionale alla sua temperatura assoluta.</p>
+              <p>In termini matematici:
+                V1 : T1 = V2 : T2 <br>
+                <br>
+              Dove: <br>
+              V1 = volume del gas alla temperatura T1 <br>
+              T1 = temperatura assoluta del gas <br>
+              V2 = volume del gas alla temperatura T2 <br>
+              T2 = temperatura assoluta del gas <br>
+              <br>
+              Nel 1802 Gay-Lussac, riprendendo la legge di Charles, riuscì a dimostrare sperimentalemente che esiste una relazione matematica tra il volume del gas e la sua temperatura in gradi Celsius: <br>
+              Mantenendo costante la pressione del gas, a ogni aumento di temperatura di 1°C corrisponde un incremento del volume pari a 1/273 del volume occupato alla temperatura di 0°C. <br>
+             </p>
+             <br>
+             <h2 id="isocora">Trasformazione a volume costante</h2>
+             <p>La legge di di Gay-Lussac o legge dell'isocora afferma che:<br>
+               A volume costante, la pressione di una data quantità di gas è direttamente proporzionale alla sua temperatura assoluta.<br>
+               <br>
+               In termini matematici:
+               P1 : T1 = P 2 : T2 <br>
+               <br>
+               Dove: <br>
+               P1 = pressione del gas alla temperatura T1 <br>
+              T1 = temperatura assoluta del gas <br>
+              P2 = pressione del gas alla temperatura T2 <br>
+              T2 = temperatura assoluta del gas <br>
+              <br>
+              In modo analogo alla legge di Charles, Gay-Lussac riuscì a dimostrare sperimentalmente che esiste una relazione matematica tra la pressione di un gas e la sua temperatura in gradi Celsius: <br>
+              In altri termini, mantenendo costante il volume del gas, a ogni incremento di temperatura di 1°C corrisponde un aumento della pressione pari a 1/273 della pressione esercitata alla temperatura di 0°C. <br>
+             </p>
+      </div>
+      <h1 id="c">Calcoli</h1>
+      <center>
+        <div class="form1">
+          <h5>Isobara</h5>
+        <p style="font-size: 25px;">V = V<sub>0</sub>*T / T<sub>0</sub></p>
+        <form name="c" style="margin-bottom: 10%">
+          <center>
+            <table>
+              <tr>
+                <td> <p style="mrgine-top: 0px;">V =   (</p> </td>
+                <td> <input type="text" name="v0" value="V0" class="text1"> </td>
+                <td> <p>m<sup>3</sup>*</p> </td>
+                <td> <input type="text" name="t" value="T" class="text1"> </td>
+                <td> <p>K )</p> </td>
+                <td><p>/</p></td>
+                <td> <input type="text" name="t0" value="T0" class="text1"></td>
+                <td> <p>K</p> </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <input type="button"value="CALCOLA" onclick="ins()"> </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td> <p style="mrgine-top: 0px;">V = </p> </td>
+                <td> <input type="text" name="r" value="Risultato" style="color: #A00000;"class="text1"> </td>
+              </tr>
+            </table>
+        </center>
+      </form>
+    </div>
+      <script type="text/javascript">
+      function ins() {
+        var x =document.c.v0.value;
+        var y =document.c.t.value;
+        var z =document.c.t0.value;
+        var f =(x*y)/z;
+        document.c.r.value=f;
+        document.c.r.value.focus();
+      }
+      function sn() {
+        var tn = document.c.r.value;
+        if (NaN(tn)) {
+          document.c.r.value="";
+        }
+      }
+      </script>
+      <div class="form1" style="margin-top:5%">
+        <h5>Isocora</h5>
+      <p style="font-size: 25px;">p = p<sub>0</sub>*T / T<sub>0</sub></p>
+      <form name="pr" style="margin-bottom: 10%">
+        <center>
+          <table>
+            <tr>
+              <td> <p style="mrgine-top: 0px;">p =   (</p> </td>
+              <td> <input type="text" name="p0" value="p0" class="text1"> </td>
+              <td> <p>Pa *</p> </td>
+              <td> <input type="text" name="t1" value="T" class="text1"> </td>
+              <td> <p>K )</p> </td>
+              <td><p>/</p></td>
+              <td> <input type="text" name="t01" value="T0" class="text1"></td>
+              <td> <p>K</p> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td> <input type="button"value="CALCOLA" onclick="ins1()"> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td> <p style="mrgine-top: 0px;">p = </p> </td>
+              <td> <input type="text" name="ri" value="Risultato" style="color: #A00000;"class="text1"> </td>
+            </tr>
+          </table>
+      </center>
+    </form>
+  </div>
+    <script type="text/javascript">
+    function ins1() {
+      var x =document.pr.p0.value;
+      var y =document.pr.t1.value;
+      var z =document.pr.t01.value;
+      var f =(x*y)/z;
+      document.pr.ri.value=f;
+      document.pr.ri.value.focus();
+    }
+    function sn() {
+      var tn = document.pr.ri.value;
+      if (NaN(tn)) {
+        document.pr.ri.value="";
+      }
+    }
+    </script>
+
+  </script>
+  <div class="form1" style="margin-top:5%">
+    <h5>Isoterma</h5>
+  <p style="font-size: 25px;">V<sub>1</sub> = p<sub>2</sub>*V<sub>2</sub> / p<sub>1</sub></p>
+  <form name="ir" style="margin-bottom: 10%">
+    <center>
+      <table>
+        <tr>
+          <td> <p style="mrgine-top: 0px;">V =   (</p> </td>
+          <td> <input type="text" name="v2" value="V2" class="text1"> </td>
+          <td> <p>Pa *</p> </td>
+          <td> <input type="text" name="p2" value="p2" class="text1"> </td>
+          <td> <p>K )</p> </td>
+          <td><p>/</p></td>
+          <td> <input type="text" name="p1" value="p1" class="text1"></td>
+          <td> <p>K</p> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td> <input type="button"value="CALCOLA" onclick="ins2()"> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td> <p style="mrgine-top: 0px;">p = </p> </td>
+          <td> <input type="text" name="ris" value="Risultato" style="color: #A00000;"class="text1"> </td>
+        </tr>
+      </table>
+  </center>
+</form>
+</div>
+<script type="text/javascript">
+function ins2() {
+  var x =document.ir.v2.value;
+  var y =document.ir.p2.value;
+  var z =document.ir.p1.value;
+  var f =(x*y)/z;
+  document.ir.ris.value=f;
+  document.ir.ris.value.focus();
+}
+function sn() {
+  var tn = document.ir.ris.value;
+  if (NaN(tn)) {
+    document.ir.ris.value="";
+  }
+}
+</script>
+  </center>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css" type="text/css">
+    <title>PhysiCalc - Leggi della dinamica</title>
+    <style media="screen">
+      body{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="home page.html"><img src="logo.png" style="height:100px;"></a>
+      </header>
+      <nav>
+        <table style="width: 100%;">
+          <tr>
+            <td><button class="dropbtn" onclick="javascript:history.go(-1)"><img src="ind.png" style="width: 100%"></button></td>
+            <td>
+        <div class="dropdown" style="float:right;">
+          <table>
+            <tr>
+              <td> <p class="font1">Menu </p> </td>
+              <td><button class="dropbtn"><img src="menu.png" style="width: 100%"></button></td>
+            </tr>
+          </table>
+          <div class="dropdown-content">
+          <a href="pdd.html"style="text-decoration: underline; border: 1px solid black;">Leggi della dinamica</a>
+          <a href="e.html">Energia cinetica</a>
+          <a href="lgp.html">Legge dei gas perfetti</a>
+          <a href="home page.html"> HOME</a>
+        </div>
+      </div>
+      </td>
+      </tr>
+      </table>
+      </nav>
+      <br>
+      <h1 style="margin-top: 0.1%;">Leggi Della Dinamica</h1>
+      <aside class="">
+        <div class="ul">
+          <a href="#Primo">Primo principio</a>
+          <a href="#Secondo">Secondo principio</a>
+          <a href="#Terzo">Terzo principio</a>
+          <a href="#c">Calcoli</a>
+        </div>
+      </aside>
+      <div class="paragrafo">
+        <p>I tre principi della Dinamica (noti anche come leggi di Newton) sono tre risultati teorici fondamentali su cui poggia l'intera teoria della Dinamica, e sono rispettivamente il principio di inerzia, il principio di proporzionalità e il principio di azione e reazione.
+          Nella precedente lezione, la prima della sezione dedicata alla Dinamica, abbiamo introdotto il concetto di forza. Ora è il momento di passare al cuore della teoria su cui si fonderanno tutte le lezioni a venire: parliamo dei tre principi della Dinamica.
+          In questo frangente ci limitiamo a proporre un riassunto delle tre leggi della Dinamica formulate da Newton nel XVII secolo, riportando gli enunciati di ciascun principio e una breve spiegazione, in modo da fornire una panoramica completa. Nelle lezioni successive tratteremo le varie leggi di Newton nel dettaglio, analizzando il significato di ciascuna di esse e corredando le spiegazioni con diversi esempi.</p>
+          <br>
+          <h2 id="Primo">Primo principio</h2>
+          <p>Il primo principio della Dinamica (noto anche come prima legge di Newton o principio di inerzia) è una legge introdotta da Isaac Newton nel 1687. Esso stabilisce che se su un corpo agisce una forza risultante nulla, allora se esso è in quiete rimarrà in quiete, mentre se è in moto proseguirà in moto rettilineo uniforme.
+            Nella precedente lezione abbiamo introdotto i tre principi della Dinamica, proponendone velocemente gli enunciati e ripromettendoci di trattare, successivamente, ciascuno di essi nel dettaglio. Qui di seguito ci occupiamo del primo principio della Dinamica, detto anche prima legge di Newton nonché principio di inerzia.
+            Come vedremo tra un istante l'enunciato del primo principio della Dinamica non richiederà la scrittura di alcuna formula, bensì una spiegazione concettuale. Per quanto cercheremo di rendere la spiegazione facilmente digeribile non ometteremo alcun dettaglio e, oltre che su alcuni esempi, ci soffermeremo sulla validità del principio di inerzia per poi riprenderlo nelle lezioni successive.<p>
+              <br>
+            <h2 id="Secondo">Secondo principio della dinamica</h2>
+            <p>Il secondo principio della Dinamica (detto anche seconda legge di Newton o principio di proporzionalità) è una legge introdotta da Isaac Newton nel 1687: fornisce una formula della forza che permette di calcolarla come prodotto tra la massa e l'accelerazione.
+              Dopo aver visto il primo principio della Dinamica possiamo passare al secondo principio della Dinamica, noto anche come seconda legge di Newton.
+            Come vedremo tra un istante, oltre a fornire l'enunciato della seconda legge e a spiegarlo nel dettaglio, vedremo che tutta la questione è incentrata su una relazione che lega il concetto di forza a quello di accelerazione: la cosiddetta formula del secondo principio della Dinamica. Nelle lezioni a seguire entreremo nella fattispecie dei vari tipi di forze e vedremo come caratterizzare la seconda legge di Newton nei casi specifici, proponendo anche diversi esempi ed esercizi svolti.</p>
+            <br>
+            <h2 id="Terzo">Terzo principio della dinamica</h2>
+            <p>Il terzo principio della Dinamica (detto anche terza legge di Newton o principio di azione e reazione) è una legge introdotta da Isaac Newton nel 1687: esso stabilisce che se un corpo esercita una forza su un secondo corpo, allora il secondo esercita sul primo una forza uguale e contraria.
+            Proseguiamo con lo studio dei principi della Dinamica e passiamo finalmente alla terza ed ultima legge proposta da Newton: il terzo principio della Dinamica, noto anche come principio di azione e reazione o terza legge di Newton.
+              In questa lezione partiremo dall'enunciato del terzo principio della Dinamica per poi soffermarci su una spiegazione dettagliata ed il più intuitiva possibile. Vedremo inoltre come è possibile riassumere la terza legge di Newton in un'apposita formula e, per concludere, proporremo alcune considerazioni sul legame tra la terza legge e i primi due principi della Dinamica.</p>
+      </div>
+      <h1 id="c">Calcoli</h1>
+      <center>
+        <div class="form1">
+        <p style="font-size: 40px;">F = ma</p>
+        <form name="c" style="margin-bottom: 10%">
+      <table>
+        <tr>
+          <td> <p>F=</p> </td>
+          <td> <input type="text" name="primo" value="massa" class="text"> </td>
+          <td> <p>Kg * </p> </td>
+          <td> <input type="text" name="secondo" value="accelerazione" class="text"> </td>
+          <td> <p>m/s<sup>2</sup></p> </td>
+          <td><input type="button" value="Calcola" onClick="ins()"></td>
+        </tr>
+        <tr>
+          <td> <p>F=</p> </td>
+          <td> <input type="text" name="r" value="forza" class="text" style="color: #A00000;"> </td>
+          <td> <p>N</p> </td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    </center>
+      <script type="text/javascript">
+      function ins() {
+        var x =document.c.primo.value;
+        var y =document.c.secondo.value;
+        var f =x*y;
+        document.c.r.value=f;
+        document.c.r.value.focus();
+      }
+      function sn() {
+        var tn = document.c.r.value;
+        if (NaN(tn)) {
+          document.c.r.value="";
+        }
+      }
+      </script>
+  </body>
+</html>

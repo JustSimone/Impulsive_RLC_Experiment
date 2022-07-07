@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stile.css" type="text/css">
+    <title>PhysiCalc - Energia cinetica</title>
+    <style media="screen">
+      body{
+        background-color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="home page.html"><img src="logo.png" style="height:100px;"></a>
+      </header>
+      <nav>
+        <table style="width: 100%;">
+          <tr>
+            <td><button class="dropbtn" onclick="javascript:history.go(-1)"><img src="ind.png" style="width: 100%"></button></td>
+            <td>
+        <div class="dropdown" style="float:right;">
+          <table>
+            <tr>
+              <td> <p class="font1">Menu </p> </td>
+              <td><button class="dropbtn"><img src="menu.png" style="width: 100%"></button></td>
+            </tr>
+          </table>
+          <div class="dropdown-content">
+          <a href="pdd.html">Leggi della dinamica</a>
+          <a href="e.html"style="text-decoration: underline; border: 1px solid black;">Energia cinetica</a>
+          <a href="lgp.html">Legge dei gas perfetti</a>
+          <a href="home page.html"> HOME</a>
+        </div>
+      </div>
+      </td>
+      </tr>
+      </table>
+      </nav>
+      <br>
+      <h1 style="margin-top: 0.1%;">Energia cinetica</h1>
+      <aside class="">
+        <div class="ul">
+          <a href="#spiega">Enerigia cinetica</a>
+          <a href="#c">Calcoli</a>
+        </div>
+      </aside>
+      <div class="paragrafo">
+        <p id="spiega">L'energia cinetica in Dinamica è una forma di energia legata al movimento dei corpi: la formula per il calcolo dell'energia cinetica di un corpo la esprime come semiprodotto tra la massa del corpo per il quadrato della sua velocità.
+La prima forma di energia che incontriamo nello studio della meccanica classica è l'energia cinetica (tipicamente indicata con il simbolo K). L'energia cinetica è una grandezza legata al movimento e in particolare alla velocità di un corpo; come vedremo tra poco, la velocità non è l'unica grandezza coinvolta nella definizione, perché alla definizione concorre anche la massa dei corpi.</p>
+      </div>
+      <h1 id="c">Calcoli</h1>
+      <center>
+        <div class="form1">
+        <p style="font-size: 40px;">E<sub>c</sub> = <sup>1</sup>/<sub>2</sub> mv<sup>2</sup> </p>
+        <form name="c" style="margin-bottom: 10%">
+      <table>
+        <tr>
+          <td> <p>E<sub>c</sub>=</p> </td>
+          <td> <input type="text" name="primo" value="massa" class="text"> </td>
+          <td> <p>Kg * </p> </td>
+          <td> <input type="text" name="secondo" value="velocità" class="text"> </td>
+          <td> <p>m/s</p> </td>
+          <td><input type="button" value="Calcola" onClick="ins()"></td>
+        </tr>
+        <tr>
+          <td> <p>E<sub>c</sub>=</p> </td>
+          <td> <input type="text" name="r" value="Energia" class="text" style="color: #A00000;"> </td>
+          <td> <p>J</p> </td>
+        </tr>
+      </table>
+      </form>
+    </div>
+    </center>
+      <script type="text/javascript">
+      function ins() {
+        var x =document.c.primo.value;
+        var y =document.c.secondo.value;
+        var f =(x/2)*(y*y);
+        document.c.r.value=f;
+        document.c.r.value.focus();
+      }
+      function sn() {
+        var tn = document.c.r.value;
+        if (NaN(tn)) {
+          document.c.r.value="";
+        }
+      }
+      </script>
+  </body>
+</html>

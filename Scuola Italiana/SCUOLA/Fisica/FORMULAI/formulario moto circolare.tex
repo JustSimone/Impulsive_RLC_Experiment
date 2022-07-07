@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath,tikz}
+\usetikzlibrary{calc}
+\newenvironment{sistema}%
+{\left\lbrace\begin{array}{@{}l@{}}}%
+{\end{array}\right.}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\begin{document}
+\begin{center}
+{\Huge Formulario Moto Armonico}
+\vspace{0,75cm}
+\end{center}
+{\huge -Moto circolare uniforme}
+\\
+\\
+\begin{Large}
+\hspace* {1,5cm} $\omega = \frac{\Delta \alpha}{\Delta t} $ (rad/s)
+\hspace {1,5cm} $\omega = \frac{2*\pi}{T}$
+\\
+\\
+\hspace*{1,5cm} $a_{c} = \frac{v^{2}}{r} = \omega^{2}*r$
+\hspace{1,5cm} $F_{c} = m*\frac{v^{2}}{r} = m*\omega^{2}*r $
+\end{Large}
+{\huge - Moto armonico}
+\\
+\\
+\begin{Large}
+\hspace* {0,75cm} \textit{ampiezza = d;}\\
+\hspace*{0,75cm} \textit{periodo = T};\\
+\hspace*{0,75cm}\textit{frequenza = f =$ \frac{1}{T} $};
+\\
+\\
+\hspace*{1,5cm}$s = r * cos(\omega*t)$
+\\
+\\
+\hspace*{1,5cm}$v = -v_{0} * sen(\omega * t)$ dove $v_{0} = (\omega * r)$
+\\
+\\
+\hspace*{1,5cm}$\overrightarrow{a} = -\omega^{2}*\overrightarrow{s} $
+\\
+\\
+{\huge - Moto armonico di una molla}
+\\
+\\
+\hspace*{1,5cm}$a = -\frac{k}{m}*r = -\omega^{2}*s$
+\\
+\\
+\hspace*{1,5cm}$\omega^{2} = \frac{k}{m} \rightarrow \frac{2*\pi}{T} = \sqrt{\frac{k}{m}} \rightarrow T= 2*\pi*\sqrt{\frac{m}{k}}$
+\\
+\\
+{\huge -Moto del pendolo}
+\\
+\\
+\hspace*{1,5cm}$\omega^{2} = \frac{g}{l} \rightarrow \frac{2*\pi}{T} = \sqrt{\frac{g}{l}} \rightarrow T= 2*\pi*\sqrt{\frac{l}{g}}$
+\end{Large}
+\end{document}
