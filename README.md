@@ -4,4 +4,4 @@
 Nella stessa cartella è presente l'articolo da dove questo esperimetno è stato ispirato.</p>
 <h2>Esecuzione</h2>
 <p>Per l'esecuzione del sorgente è necessario avere installato le librerie di Python pandas, numpy, matplotlib e scipy o generare un enviroment su anaconda che contenga tali librerie.</p>
-<p>Alternativamente è presente anche un file <a href="https://github.com/JustSimone/Impulsive_RLC_Experiment/blob/main/analysis/macro.C"> macro.C </a> nella cartella di analisi, eseguibile utilizzando ROOT.</p>
+<p>Alternativamente è presente anche un file <a href="https://github.com/JustSimone/Impulsive_RLC_Experiment/blob/main/analysis/macro.C"> macro </a> nella cartella di analisi, eseguibile utilizzando ROOT.</p>
