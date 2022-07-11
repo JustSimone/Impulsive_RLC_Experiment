@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
 # Calculation for the standard deviation from the noise
-noise = pd.read_table('data/raw data/Noise1105.txt', sep='\t')
+noise = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Noise1105.txt', sep='\t')
 std = np.std(noise.Noise)
 
 # Defining the function for the fit of the data
@@ -17,7 +17,7 @@ def lin(x, a, b):
   return a*x + b
 
 # Actual data analysis
-data_quadra = pd.read_table('data/raw data/Dati0511_1.txt', sep = '\t')
+data_quadra = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Dati0511_1.txt', sep = '\t')
 
 datax = data_quadra.TimeV_C
 datay = data_quadra.AmplitudeV_C
@@ -63,7 +63,7 @@ fig.set_size_inches(19, 15)
 
 print(np.sqrt(np.diag(cov)))
 
-plt.savefig('QuadraR1.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/graphs/QuadraR1.pdf', dpi=300, bbox_inches='tight')
 
 for i in range(4):
   print('par', i,' ', par[i])

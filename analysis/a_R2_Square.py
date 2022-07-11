@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
 # Calculation for the standard deviation from the noise
-noise = pd.read_table('data/raw data/Noise1105.txt', sep='\t')
+noise = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Noise1105.txt', sep='\t')
 std = np.std(noise.Noise)
 
 # Defining the function for the fit of the data
@@ -17,7 +17,7 @@ def lin(x, a, b):
   return a*x + b
 
 # Actual data analysis
-data_max = pd.read_table('data/raw data/Dati1105_Maxati.txt', sep ='\t')
+data_max = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Dati1105_Maxati.txt', sep ='\t')
 
 datax = data_max.TimeV_C
 datay = data_max.AmplitudeV_C
@@ -57,7 +57,7 @@ fig2.axhline(0, color='black')
 fig2.plot(datax, res, lw = 2)
 
 fig.set_size_inches(19, 15)
-plt.savefig('QuadraR2.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/graphs/QuadraR2.pdf', dpi=300, bbox_inches='tight')
 
 print(np.sqrt(np.diag(cov)))
 

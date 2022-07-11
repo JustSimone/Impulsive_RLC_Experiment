@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 
 # Calculation for the standard deviation from the noise
-noise = pd.read_table('data/raw data/Noise1105.txt', sep='\t')
+noise = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Noise1105.txt', sep='\t')
 std = np.std(noise.Noise)
 
 # Defining the function for the fit of the data
@@ -17,7 +17,7 @@ def lin(x, a, b):
   return a*x + b
 
 # Actual data analysis
-data_impulse = pd.read_table('data/raw data/Dati1105_waveformimpulse3.txt', sep = '\t')
+data_impulse = pd.read_table('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/data/raw data/Dati1105_waveformimpulse3.txt', sep = '\t')
 
 datax = data_impulse.TimeV_C
 datay = data_impulse.AmplitudeV_C
@@ -58,7 +58,7 @@ fig2.plot(datax, res3, lw = 2)
 fig2.axhline(0, color='black')
 
 fig.set_size_inches(19, 15)
-plt.savefig('ImpulsoR1.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/simonecoli/Desktop/Universita/Secondo_anno/Lab/RLC_exp/impulsive_RLC_experiment/graphs/ImpulsoR1.pdf', dpi=300, bbox_inches='tight')
 
 print(np.sqrt(np.diag(cov)))
 
