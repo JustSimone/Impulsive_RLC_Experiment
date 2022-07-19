@@ -38,7 +38,7 @@ plt.rc('xtick', labelsize=28)
 plt.rc('ytick', labelsize=28)
 plt.xlabel('Time [s]', fontsize=30)
 plt.ylabel('Voltage [V]', fontsize=30)
-plt.title('Potenziale ai capi del condensatore - Onda Quadra R2', fontsize=32)
+plt.title('Potenziale ai capi del condensatore - Onda Quadra R2', fontsize=42)
 
 fig1.errorbar(datax, datay, std, fmt='o', ms = 3, mew = 2, capsize=5, capthick=1, zorder=10, label = 'Dati')
 par, cov = curve_fit(sind, datax, datay, p0 = [5, -10200, 45100,-0.1])

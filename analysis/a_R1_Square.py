@@ -43,7 +43,7 @@ plt.rc('xtick', labelsize=28)
 plt.rc('ytick', labelsize=28)
 plt.xlabel('Time [s]', fontsize=30)
 plt.ylabel('Voltage [V]', fontsize=30)
-plt.title('Potenziale ai capi del condensatore  -  Onda Quadra R1 ', fontsize=32)
+plt.title('Potenziale ai capi del condensatore  -  Onda Quadra R1 ', fontsize=42)
 
 #fig1.plot(datax, sind(datax, 5, -5400, 81100, 0), color = 'black', lw = 1.5, ls = "-.", label = "Andamento Teorico", zorder = 0)
 fig1.errorbar(datax, datay, std, fmt='o', ms = 3, mew = 2, capsize=5, capthick=1, zorder=10, label = 'Dati')
