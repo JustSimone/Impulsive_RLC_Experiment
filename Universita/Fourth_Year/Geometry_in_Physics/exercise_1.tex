@@ -1,0 +1,178 @@
+\documentclass{article}[a4paper]
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{derivative}
+
+\usepackage{amsfonts}
+
+\newcommand*{\eqdef}{\ensuremath{\overset{\mathclap{\text{\tiny def}}}{=}}}
+
+\title{Exercise sheet Geometry in Physics - 1}
+\author{Simone Coli}
+\date{October $26^{\mbox{\small th}}$, 2023} 
+
+\begin{document}
+\maketitle
+\section{Solution} %Exercise 1
+    \subsection*{a)}
+        Let $\mathbf{x, h} \in V$ then by definition of differentiability for $f(\mathbf{x}) = A(\mathbf{h})$
+        \[
+            A(\mathbf{x + h}) = A(\mathbf{x}) + A'(\mathbf{h}) + o(|\mathbf{h}|),
+        \]
+        such that $||\mathbf{h}||$ is small and $A' \in L(V, W)$. Since $A \in L(V, W)$, then it is linear and,
+        \[
+            A(\mathbf{x}) + A(\mathbf{h}) = A(\mathbf{x}) + A'(\mathbf{h}) + o(|\mathbf{h}|).
+        \]
+        From which $Df_{|W}(\mathbf{h}) = A(\mathbf{h})$. In the same way we can calculate the second derivative:
+        \[
+            Df_{|W}(\mathbf{x+h}) = A(\mathbf{x + h}) = A(\mathbf{x}) + A''(\mathbf{h}) + o(|\mathbf{h}|),
+        \]
+        meaning that $D^2f_{|W}(\mathbf{h}) = A(\mathbf{h})$ amd $D^3f_{|W}(\mathbf{h}) = A(\mathbf{h})$.
+
+        For a bilinear map $g(\mathbf{x}) = b(\mathbf{x,x})$, with $b \in L(V,V;W)$ the definition of differentiability implies:
+        \[
+            b(\mathbf{x+h,x+h'}) = b(\mathbf{x,x}) + b'(\mathbf{h,h'}) + o(|{|\mathbf{h}|}^2+{|\mathbf{h'}|}^2|),
+        \]
+        where $\mathbf{h} \in \mathbb{V}$. Because of the bilinearity
+        \[
+            \begin{split}
+                b(\mathbf{x+h,x+h}) &= b(\mathbf{x,x}) + b(\mathbf{h,x}) + b(\mathbf{x,h}) + b(\mathbf{h,h}) \\
+                &= b(\mathbf{x,x}) + b'(\mathbf{h,h}) + o(|\mathbf{h}|),
+            \end{split}
+        \]
+        meaning that $Dg_{|W}(\mathbf{h,h}) = 2b(\mathbf{h,x})$.
+        Iterating this process we still get
+        \[
+            D^2 = 4b(x, h)
+        \]
+        \[
+            D^3 = 8b(x, h)
+        \]
+    \subsection*{b)}
+    Since $\mathbf{x} \in V= \mathbb{R}^2$ then it is a two-dimensional vector, meaning that $f \in V^*$ so that:
+    \[
+        f(\mathbf{x}) = 
+        \begin{pmatrix}
+             c & d
+        \end{pmatrix}
+        \begin{pmatrix}
+            a\\
+            b
+        \end{pmatrix}
+    \]
+    where $\mathbf{x}=
+    \begin{pmatrix}
+        a\\
+        b
+    \end{pmatrix}$
+   and with $a,b,c,d \in \mathbb{R}$.
+
+   Since $g(\mathbf{x}) = b(\mathbf{x,x})$ this has to be of the form 
+   \[
+    g(\mathbf{x}) = b(\mathbf{x,x})=
+    \begin{pmatrix}
+        a & b
+    \end{pmatrix}
+    \begin{pmatrix}
+        c & d\\
+        e & f\\
+    \end{pmatrix}
+    \begin{pmatrix}
+        a\\
+        b
+    \end{pmatrix}
+   \]
+   where $a,b,c,d,e,f \in \mathbb{R}$.
+\section{Solution} %Exercise 2
+    Let us consider a map $f: M_{n\times n} (\mathbb{R}) \to \mathbb{R}$ such that $A \to \det{A}$, then by definition of differentiability, we have that:
+    \[
+        f(A + H) = \det(A+H) = f(A) + f'(H) + o(||H||).
+    \]
+    The definition of the determinant for an $n\times n$ matrix is:
+    \[
+        T = \sum_{ \in S_n} \mbox{sg}(\sigma)\, a_{1, \sigma(1)} \cdots a_{n, \sigma(n)},
+    \]
+    If we calculate the derivative of our map in $A=I$, where $I$ is the identity, we get that:
+    \[
+        \begin{split}
+            Df_{|I}(H) &= 
+            \begin{vmatrix}
+                h+1 & h & \cdots & h\\
+                h & h+1 & \cdots & h\\
+                \vdots & \vdots & \ddots & \vdots\\
+                h & h & \cdots & h+1
+            \end{vmatrix} - 1 =\\
+            &= 1 + h + h + \cdots + h + h^2 + \cdots -1
+        \end{split}
+    \]
+    There are just n terms of the sum that have a linear dependence from $h$ that is $Df_{|I}(H) = nh$ which is the trace of the $H$ matrix. therefore
+    \[
+        Df_{|I}(H) = \mbox{tr}(H) 
+    \]
+\section{Solution} %Exercise 3
+Let us consider an implicit representation of the curve $\gamma(t)$, that is a function $h(x(t), y(t)) = 0$ where $t \in I$. If we assume this function to regular then
+\[
+    Dh_{|t_0} (t) = \left. \pdv{h}{x} \pdv{x}{t} \right|_{t_0} + \left. \pdv{h}{y} \pdv{y}{t} \right|_{t_0} \neq 0\; ,
+\]
+since by hypothesis $x'(t_0) \neq 0$ and $y'(t_0) \neq 0$. By the implicit function theorem:
+\[
+    \exists\, J \subset I\; :\; t_0 \in J 
+\]
+and such that either
+\[
+    \mbox{{\small graph}}(g_1) = \{ (x(t), g_1(x(t))),\; t \in J \} \eqdef \gamma_{|J}(t)\, ,
+\]
+\[
+    \mbox{{\small graph}}(g_2) = \{ (g_2(y(t)), y(t)),\; t \in J \} \eqdef \gamma_{|J}(t)\, .
+\]
+So that $y(t) = g_1(x(t))$ and $x(t) = g_2 (y(t))$. The two functions are therefore one the inverse of the other.
+\section{Solution} %Exercise 4
+    \subsection*{a)}
+        To prove the orthogonality of the two vectors we just need to show that their (standard) scalar product is zero. Let $\partial_\theta$ and $\partial_t$ be:
+        \[
+            \partial_\theta f =
+            \begin{pmatrix}
+                -r(t) \sin(\theta)\\
+                r(t) \cos(\theta)\\
+                0
+            \end{pmatrix}, \;
+            \partial_t = \begin{pmatrix}
+                r'(t) \cos(\theta)\\
+                r'(t) \sin(\theta)\\
+                h'(t)
+            \end{pmatrix},
+        \]
+        then:
+        \[
+            \langle \partial_\theta , \partial_t \rangle = - r(t)r'(t) \sin(\theta) \cos(\theta) + r(t)r'(t) \sin(\theta) \cos(\theta) + 0 = 0
+        \]
+    \subsection*{b)}
+        If we assume $r(t) = 1/\mbox{cosh}(t)$ and $h(t) = tanh(t)$, then we have that:
+        \[
+            \left\| \pdv{f}{\theta} \right\| = \sqrt{(1+t^2)(\cos^2{\theta} + \sin^2{\theta})} = \sqrt{(1+t^2)}
+        \]
+        \[
+            \left\| \pdv{f}{t} \right\| = \sqrt{\frac{t^2}{1-t^2} + 1} = \sqrt{\frac{t^2+1-t^2}{1-t^2}} = \frac{1}{\sqrt{1+t^2}}
+        \]
+        Which proves that:
+        \[
+            \left\| \pdv{f}{\theta} \right\|  \left\| \pdv{f}{t} \right\| = 1
+        \]
+    \subsection*{c)}
+        If we assume $r(t) = 1/\mbox{cosh}(t)$ and $h(t) = \mbox{tanh}(t)$, then we have that:
+            \[
+                \left\| \pdv{f}{\theta} \right\| = \frac{1}{\mbox{cosh}^2(t)} (\sin^2{\theta} + \cos^2{\theta}) = \frac{1}{\mbox{cosh}^2(t)}
+            \]
+            \[\
+                \begin{split}
+                    \left\| \pdv{f}{t} \right\| &=  \frac{\mbox{sinh}^2(t)}{\mbox{cosh}^4(t)}\; (\sin^2{\theta} + \cos^2{\theta}) + \; \frac{1}{\mbox{cosh}^4(t)} =\\
+                    &= \frac{\mbox{sinh}^2(t) + \mbox{cosh}^2(t) - \mbox{sinh}^2(t)}{\mbox{cosh}^4(t)} =\\
+                    &=\frac{\mbox{cosh}^2(t)}{\mbox{cosh}^4(t)} =\frac{1}{\mbox{cosh}^2(t)}
+                \end{split}
+            \]
+            which proves that, given these definitions of $r(t)$ and $h(t)$:
+            \[
+                \left\| \pdv{f}{\theta} \right\| = \left\| \pdv{f}{t} \right\|
+            \]
+\end{document}

@@ -1,0 +1,7 @@
+# Listo of files to be ingored
+/.vscode
+.fls
+.aux
+.fdb_latexmk
+.log
+.syntex.gz

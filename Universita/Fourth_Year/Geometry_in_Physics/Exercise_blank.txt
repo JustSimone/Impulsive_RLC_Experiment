@@ -1,0 +1,16 @@
+\documentclass{article}[a4paper]
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+\title{Exercise sheet - }
+\author{Simone Coli}
+\date{October $27^{\mbox{th}}$, 2023}
+
+\begin{document}
+\section{Solution} %Exercise 1
+\section{Solution} %Exercise 2
+\section{Solution} %Exercise 3
+\section{Solution} %Exercise 4
+\end{document}
